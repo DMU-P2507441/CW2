@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="css/style.css" type="text/css" rel="stylesheet" />
+    <title></title>
+  </head>
+  <body>
+    <!-- This page will appear when the user searches something,
+    it was thought that it would make more sense for the user to be taken to a search results page instead of going directly to the top or bottom page.
+     All data for this page is again loaded from suggestions.js. -->
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="homepage.html"><img src="img/logo.png" src="img/logo.gif" src="img/logo.jpg"  alt="logo" class="logo"></a>
+        </div>
+      <div class="searchbar">
+        <input type="text" placeholder="Search..." class="film-search">
+        <div class="autocom-box">
+          <li>The Wind Rises</li>
+          <li>Three Billboards Outside Ebbing, Missouri</li>
+          <li>Train to Busan</li>
+          <li>Artemis Fowl</li>
+          <li>Baywatch</li>
+        </div>
+        <div class="search-icon">
+          <span>&#9906;</span>
+        </div>
+    </div>
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+          <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="top.html">Top</a></li>
+            <li><a href="bottom.html">Bottom</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+      </nav>
+
+    </header>
+    <main>
+      <div class="container" id="txtBox">
+        <div class="results-for">
+          <!-- the user of the span class, means that the whatever the user searches will be written alongside the "Results for" text. -->
+          <h3> Results for <span class="results-sentence"></span> </h3>
+        </div>
+      <div class="results">
+        <!-- this displays when the user gets no matching search results. -->
+        <p> No Results Found </p>
+      </div>
+      </div>
+
+      <div class="modal" id="modal">
+      </div>
+      <div id="overlay">
+      </div>
+
+    </main>
+    <div class="footer">
+      <p> Dylan Moxon, P2507441 </p>
+      <div class="font-size">
+      <label for="fontSize">Font Size</label>
+      <select id="fontSize">
+        <option value='12'>Small</option>
+        <option value='16' selected>Normal</option>
+        <option value='26'>Large</option>
+      </select>
+    </div>
+    <script src="js/site.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/results.js"></script>
+    <script src="js/suggestions.js"></script>
+  </body>
+</html>

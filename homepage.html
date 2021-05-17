@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="css/style.css" type="text/css" rel="stylesheet" />
+    <title></title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="homepage.html"><img src="img/logo.png" src="img/logo.gif" src="img/logo.jpg"  alt="logo" class="logo"></a>
+          <!-- png, jpg, and gif were all attached using "src", in order to make sure all the images are diplayed on different browsers. -->
+        </div>
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+          <!-- This displays the navbar, which then has the ability to shrink down into a hamburger menu when in mobile view.
+          code adapted from tutorial at https://www.youtube.com/watch?v=At4B7A4GOPg&ab_channel=WebDevSimplified -->
+          <ul>
+            <li><a class="current" href="#">Home</a></li>
+            <li><a href="top.html">Top</a></li>
+            <li><a href="bottom.html">Bottom</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      </nav>
+    </header>
+
+  <main>
+    <div class="container" id="txtBox">
+      <div class="home">
+        <h1> Welcome </h1>
+        <h2> To DMMD </h2>
+        <div class="browse">
+        <h3> Feel Free to Search </h3>
+        <div class="searchbar">
+          <!-- The search bar was moved to be displayed in the body of the homepage, instead of being displayed in the navbar like it is in every other page. -->
+          <input type="text" placeholder="Search..." class="film-search">
+          <div class="autocom-box">
+            <!-- This was used to display a max of 5 results in the search bar, these results change in the HTML when different films are filtered.
+            Adapted from tutorial at https://www.youtube.com/watch?v=QxMBHi_ZiT8&ab_channel=CodingNepal-->
+            <li>The Wind Rises</li>
+            <li>Three Billboards Outside Ebbing, Missouri</li>
+            <li>Train to Busan</li>
+            <li>Artemis Fowl</li>
+            <li>Baywatch</li>
+          </div>
+          <div class="search-icon">
+            <span>&#9906;</span>
+          </div>
+        </div>
+        <h4> Or browse one of the following... </h4>
+        <div class="home-buttons">
+          <!-- These buttons take the user directly to the top or bottom page. -->
+         <a href="top.html" class="top-button"><button aria-label="Top">Top</button></a>
+         <a href="bottom.html" class="bottom-button"><button aria-label="Bottom">Bottom</button></a>
+       </div>
+     </div>
+      </div>
+
+    </div>
+  </main>
+  <div class="footer">
+    <p> Dylan Moxon, P2507441 </p>
+    <!-- This is the HTML for the option to change the font size. It was decided to put this in the footer, as having it in the navbar made the bar look too cluttered.
+    code adapted from https://stackoverflow.com/questions/22062453/how-to-set-font-size-in-textbox-using-dropdown-list-javascript?fbclid=IwAR2THckNCkDkGmCO8tkLI14GddEVsad-LbW6--cGjsfZwIrXGtUdrdleeL8-->
+    <div class="font-size">
+    <label for="fontSize">Font Size</label>
+    <select id="fontSize">
+      <option value='12'>Small</option>
+      <option value='16' selected>Normal</option>
+      <option value='26'>Large</option>
+    </select>
+  </div>
+    <script src="js/site.js"></script>
+    <script src="js/suggestions.js"></script>
+  </body>
+</html>

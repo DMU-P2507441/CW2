@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="css/style.css" type="text/css" rel="stylesheet" />
+    <title></title>
+  </head>
+  <body>
+    <!-- The content shown in the bottom and top pages are the same, as they both have the same purpose. All information for these pages in loaded from suggestions.js. -->
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="homepage.html"><img src="img/logo.png" src="img/logo.gif" src="img/logo.jpg"  alt="logo" class="logo"></a>
+        </div>
+      <div class="searchbar">
+        <!-- by default the searchbar is displayed in the navbar, the only exception for this is on the homepage. -->
+        <input type="text" placeholder="Search..." class="film-search">
+        <div class="autocom-box">
+          <li>The Wind Rises</li>
+          <li>Three Billboards Outside Ebbing, Missouri</li>
+          <li>Train to Busan</li>
+          <li>Artemis Fowl</li>
+          <li>Baywatch</li>
+        </div>
+        <div class="search-icon">
+          <span>&#9906;</span>
+        </div>
+    </div>
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+          <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <!-- by giving this a class of current, allows for some styling to be done in order to tell the user which page they are currently on. -->
+            <li><a class="current" href="#">Top</a></li>
+            <li><a href="bottom.html">Bottom</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      </nav>
+
+    </header>
+    <main>
+      <div class="container" id="txtBox">
+        <!-- originally, every movie displayed in the top page was hard coded into the html,
+         as this code looked very messy and was quite confusing to navigate, JavaScript was used to store all the movie information. -->
+      <div class="gallery">
+      </div>
+      </div>
+
+      <div class="modal" id="modal">
+      </div>
+      <div id="overlay">
+      </div>
+
+    </main>
+    <div class="footer">
+      <p> Dylan Moxon, P2507441 </p>
+      <div class="font-size">
+      <label for="fontSize">Font Size</label>
+      <select id="fontSize">
+        <option value='12'>Small</option>
+        <!-- adding the "selected" value allows the default font size option to be chosen. -->
+        <option value='16' selected>Normal</option>
+        <option value='26'>Large</option>
+      </select>
+    </div>
+    <script src="js/site.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/top.js"></script>
+    <script src="js/suggestions.js"></script>
+  </body>
+</html>
